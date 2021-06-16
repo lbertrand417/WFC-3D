@@ -1,0 +1,40 @@
+[api-updater (non-obsolete-error-filter)] 16/6/2021 3:25:08 PM : Starting /home/betakuwe/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 120.956ms
+moved types parse time: 93ms
+candidates parse time : 2ms
+C# parse time         : 423ms
+candidates check time : 83ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 16/6/2021 3:28:56 PM : Starting /home/betakuwe/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 100.801ms
+moved types parse time: 100ms
+candidates parse time : 2ms
+C# parse time         : 421ms
+candidates check time : 69ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 16/6/2021 3:30:08 PM : Starting /home/betakuwe/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 103.968ms
+moved types parse time: 96ms
+candidates parse time : 2ms
+C# parse time         : 419ms
+candidates check time : 81ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 16/6/2021 3:31:27 PM : Starting /home/betakuwe/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 86.841ms
+moved types parse time: 98ms
+candidates parse time : 2ms
+C# parse time         : 436ms
+candidates check time : 86ms
+console write time    : 1ms
+
