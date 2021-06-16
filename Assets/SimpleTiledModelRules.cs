@@ -12,8 +12,9 @@ public class SimpleTiledModelRules : MonoBehaviour
     private static int NUM_DIRECTIONS = 6;
 
     private Tuile[] tiles;
-    private int width;
-    private int height;
+    private int width; // x-axis
+    private int height; // y-axis
+    private int depth; // z-axis
     private Dictionary<Tuile, int> tileIndices;
     private int numTiles;
     private bool[,,] rules;
@@ -32,6 +33,10 @@ public class SimpleTiledModelRules : MonoBehaviour
         check(t1, t2, bottom)
         [t2]
         [t1]
+
+        check(t1, t2, front)
+        
+        check(t1, t2, back)
     */
     public bool check(Tuile tile1, Tuile tile2, Direction direction)
     {
@@ -41,32 +46,46 @@ public class SimpleTiledModelRules : MonoBehaviour
     public void generateRules()
     {
         rules = new bool[numTiles, numTiles, NUM_DIRECTIONS];
-        int rightCheck = width - 1;
-        int topCheck = tiles.Length - width;
+        int leftCheck = width - 1;
+        int xyArea = width * height;
+        int topCheck = xyArea - width;
+        int frontCheck = tiles.Length - xyArea;
         for (int i = 0; i < tiles.Length; ++i)
         {
-            // left
+            // right
             if (i % width != 0)
             {
-                rules[tileIndices[tiles[i - 1]], tileIndices[tiles[i]], (int) Direction.Left] = true;
+                rules[tileIndices[tiles[i - 1]], tileIndices[tiles[i]], (int) Direction.Right] = true;
             }
 
-            // right
-            if (i % width != rightCheck)
+            // left
+            if (i % width != leftCheck)
             {
-                rules[tileIndices[tiles[i + 1]], tileIndices[tiles[i]], (int) Direction.Right] = true;
+                rules[tileIndices[tiles[i + 1]], tileIndices[tiles[i]], (int) Direction.Left] = true;
             }
 
             // bottom
-            if (i >= width)
+            if (i % xyArea >= width)
             {
                 rules[tileIndices[tiles[i - width]], tileIndices[tiles[i]], (int) Direction.Bottom] = true;
             }
 
             // top
-            if (i < topCheck)
+            if (i % xyArea < topCheck)
             {
                 rules[tileIndices[tiles[i + width]], tileIndices[tiles[i]], (int) Direction.Top] = true;
+            }
+
+            // back
+            if (i >= xyArea)
+            {
+                rules[tileIndices[tiles[i - xyArea]], tileIndices[tiles[i]], (int) Direction.Back] = true;
+            }
+
+            // front
+            if (i < frontCheck)
+            {
+                rules[tileIndices[tiles[i + xyArea]], tileIndices[tiles[i]], (int) Direction.Front] = true;
             }
         }
     }
@@ -84,30 +103,6 @@ public class SimpleTiledModelRules : MonoBehaviour
             }
         }
         Debug.Log("numTiles = " + numTiles);
-    }
-
-
-
-/*
-0 0 1
-2 1 1
-3 3 3
-1 1 1
-*/
-    public void sampleTiles()
-    {
-        GameObject go = new GameObject();
-        Tuile t0 = go.AddComponent<Tuile>();
-        t0.tilename = "t0";
-        Tuile t1 = go.AddComponent<Tuile>();
-        t1.tilename = "t1";
-        Tuile t2 = go.AddComponent<Tuile>();
-        t2.tilename = "t2";
-        Tuile t3 = go.AddComponent<Tuile>();
-        t3.tilename = "t3";
-        width = 3;
-        height = 4;
-        tiles = new Tuile[] {t0, t0, t1, t2, t1, t1, t3, t3, t3, t1, t1, t1};
     }
 
     public void testSampleTiles()
@@ -130,7 +125,7 @@ public class SimpleTiledModelRules : MonoBehaviour
     public void testGenerateRules()
     {
         string[] tileNames = new string[numTiles];
-        string[] directions = new string[] {"Left", "Right", "Top", "Bottom"};
+        string[] directions = new string[] {"Left", "Right", "Top", "Bottom", "Front", "Back"};
         foreach (KeyValuePair<Tuile, int> pair in tileIndices)
         {
             Debug.Log("Tile " + pair.Key.gameObject.name + " index " + pair.Value);
@@ -144,7 +139,7 @@ public class SimpleTiledModelRules : MonoBehaviour
                 {
                     if (rules[t1, t2, d])
                     {
-                        Debug.Log("t1 = " + tileNames[t1] + ", t2 = " + tileNames[t2] + ", d = " + directions[d]);
+                        Debug.Log("t1 = " + tileNames[t1] + "\t\t\tt2 = " + tileNames[t2] + "\t\t\tdirection = " + directions[d]);
                     }
                 }
             }
@@ -165,6 +160,11 @@ public class SimpleTiledModelRules : MonoBehaviour
     {
         height = h;
     }
+
+    public void setDepth(int d)
+    {
+        depth = d;
+    }
 }
 
 #if UNITY_EDITOR
@@ -183,8 +183,9 @@ public class SimpleTiledModelRulesEditor : Editor
             me.setTiles(me.GetComponent<SemiInteractiveGrid>().tuiles);
             me.setWidth(me.GetComponent<SemiInteractiveGrid>().width);
             me.setHeight(me.GetComponent<SemiInteractiveGrid>().height);
+            me.setDepth(me.GetComponent<SemiInteractiveGrid>().depth);
 
-            me.testSampleTiles();
+            // me.testSampleTiles();
             //me.sampleTiles();
             me.generateIndices();
             //me.testGenerateIndices();

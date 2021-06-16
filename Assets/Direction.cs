@@ -1,7 +1,10 @@
+// Vue de z positif
 public enum Direction
 {
-    Left,
-    Right,
-    Top,
-    Bottom
+    Left, // positive x
+    Right, // negative x
+    Top, // positive y
+    Bottom, // negative y
+    Front, // positive z
+    Back // negative z
 }

@@ -65,7 +65,8 @@ public class SemiInteractiveGrid : MonoBehaviour
                 {
                     int indice = indicex + width * indicey + width * height * indicez;
                     tuiles[indice] = t;
-                    Debug.Log("Tuile trouvée à " + indicex + " et " + indicey + " et " + indicez);
+                    Debug.Log("(" + indicex + " " + indicey + " " + indicez + ") " + t.gameObject.name);
+                    // Debug.Log("Tuile trouvï¿½e ï¿½ " + indicex + " et " + indicey + " et " + indicez);
                 }
             }
         }
