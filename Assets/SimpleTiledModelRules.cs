@@ -16,6 +16,7 @@ public class SimpleTiledModelRules : MonoBehaviour
     private int height; // y-axis
     private int depth; // z-axis
     private Dictionary<Tuile, int> tileIndices;
+    private List<Tuile> indexTiles;
     private int numTiles;
     private bool[,,] rules;
 
@@ -41,6 +42,10 @@ public class SimpleTiledModelRules : MonoBehaviour
     public bool check(Tuile tile1, Tuile tile2, Direction direction)
     {
         return rules[tileIndices[tile1], tileIndices[tile2], (int) direction];
+    }
+    public List<Tuile> getTuiles()
+    {
+        return indexTiles;
     }
 
     public void generateRules()
@@ -95,10 +100,12 @@ public class SimpleTiledModelRules : MonoBehaviour
         TuileEqualityComparer equalityComparer = new TuileEqualityComparer();
         tileIndices = new Dictionary<Tuile, int>(equalityComparer);
         numTiles = 0;
+        indexTiles = new List<Tuile>();
         foreach (Tuile tile in tiles)
         {
             if (!tileIndices.ContainsKey(tile))
             {
+                indexTiles.Add(tile);
                 tileIndices.Add(tile, numTiles++);
             }
         }
@@ -117,7 +124,7 @@ public class SimpleTiledModelRules : MonoBehaviour
     {
         foreach (KeyValuePair<Tuile, int> pair in tileIndices)
         {
-            Debug.Log(pair.Key.tilename + " " + pair.Value);
+            Debug.Log(pair.Key.gameObject.name + " " + pair.Value + " " + indexTiles[pair.Value].gameObject.name);
         }
         Debug.Log("numTiles " + numTiles);
     }
@@ -188,7 +195,7 @@ public class SimpleTiledModelRulesEditor : Editor
             // me.testSampleTiles();
             //me.sampleTiles();
             me.generateIndices();
-            //me.testGenerateIndices();
+            me.testGenerateIndices();
             me.generateRules();
             me.testGenerateRules();
         }
