@@ -50,10 +50,6 @@ public class SimpleTiledModelRules : MonoBehaviour
     {
         return rules[tileIndices[tile1], tileIndices[tile2], (int) direction];
     }
-    public List<Tuile> getTuiles()
-    {
-        return indexTiles;
-    }
 
     public void generateRules()
     {
