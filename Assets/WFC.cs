@@ -13,6 +13,7 @@ public class WFC : MonoBehaviour
 {
     public int width = 4;
     public int height = 4;
+    public int depth = 4;
 
     [HideInInspector]
     public int gridsize = 1;
@@ -26,10 +27,9 @@ public class WFC : MonoBehaviour
 
     void OnValidate()
     {
-
+        // Should be in the "main" script
         BoxCollider bounds = this.GetComponent<BoxCollider>();
-        bounds.center = new Vector3((width * gridsize) * 0.5f - gridsize * 0.5f, (height * gridsize) * 0.5f - gridsize * 0.5f, 0f);
-        bounds.size = new Vector3(width * gridsize, (height * gridsize), 0f);
+        bounds.size = new Vector3(width * gridsize, (height * gridsize), depth * gridsize);
     }
 
     public bool sparse(int x, int voisin, Direction d)
@@ -71,7 +71,7 @@ public class WFC : MonoBehaviour
         List<Tuile>[] test = fromGridToList();
 
 
-        if (x > width - 1)
+        if (x % (width * height) > width - 1)
         {
             if (sparse(x, x - width, Direction.Top))
             {
@@ -85,7 +85,7 @@ public class WFC : MonoBehaviour
                 WFCfunction(x + 1);
             }
         }
-        if (x < (height - 1) * width)
+        if (x % (width * height) < (height - 1) * width)
         {
             if (sparse(x, x + width, Direction.Bottom))
             {
@@ -99,20 +99,35 @@ public class WFC : MonoBehaviour
                 WFCfunction(x - 1);
             }
         }
+        if (x > width * height* (depth - 1 ))
+        {
+            if(sparse(x, x - width * height, Direction.Front))
+            {
+                WFCfunction(x - width * height);
+            }
+        }
+        if (x < width * height * (depth - 1))
+        {
+            if(sparse(x, x + width * height, Direction.Back))
+            {
+                WFCfunction(x + width * height);
+            }
+        }
     }
 
     public List<Tuile>[] fromGridToList()
     {
-        List<Tuile>[] convertedGrid = new List<Tuile>[width * height];
-        for (int indice = 0; indice < width * height; indice++)
+        List<Tuile>[] convertedGrid = new List<Tuile>[width * height * depth];
+        for (int indice = 0; indice < width * height * depth; indice++)
         {
             List<Tuile> possibilities = new List<Tuile>();
             for (int indiceDict = 0; indiceDict < numberTiles; indiceDict++)
             {
-                if (grid[indice, indiceDict])
+                /*if (grid[indice, indiceDict])
                 {
                     possibilities.Add(rules.getTuiles()[indiceDict]);
-                }
+                }*/
+                possibilities.Add(rules.getTuiles()[indiceDict]);
             }
             Debug.Log("Number of poss :" + possibilities.Count);
             convertedGrid[indice] = possibilities;
@@ -126,13 +141,9 @@ public class WFC : MonoBehaviour
         listTuile = rules.getTuiles();
         numberTiles = listTuile.Count;
 
-        grid = new bool[width * height, numberTiles];
-        for (int i = 0; i < width * height; i++)
+        if (Finished() || grid == null)
         {
-            for (int j = 0; j < numberTiles; j++)
-            {
-                grid[i, j] = true;
-            }
+            Restart();
         }
 
         bool finished = false;
@@ -148,8 +159,8 @@ public class WFC : MonoBehaviour
 
     public void Restart()
     {
-        grid = new bool[width * height, numberTiles];
-        for (int i = 0; i < width * height; i++)
+        grid = new bool[width * height * depth, numberTiles];
+        for (int i = 0; i < width * height * depth; i++)
         {
             for (int j = 0; j < numberTiles; j++)
             {
@@ -168,7 +179,7 @@ public class WFC : MonoBehaviour
         }
         else
         {
-            for (int i = 0; i < width * height; i++)
+            for (int i = 0; i < width * height * depth; i++)
             {
                 int numberTrue = 0;
                 for (int j = 0; j < numberTiles; j++)

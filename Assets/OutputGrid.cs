@@ -10,21 +10,21 @@ using UnityEngine;
 public class OutputGrid : MonoBehaviour
 {
 
-    public List<Tuile> globalList;
+    //public List<Tuile> globalList;
 
     // Raw values
-    private int width = 2;
+    /*private int width = 2;
     private int height = 2;
     private int depth = 2;
-    private int tileSize = 1;
+    private int tileSize = 1;*/
 
 #if UNITY_EDITOR
-    void OnValidate()
+    /*void OnValidate()
     {
         // Should be in the "main" script
         BoxCollider bounds = this.GetComponent<BoxCollider>();
         bounds.size = new Vector3(width * tileSize, (height * tileSize), depth * tileSize);
-    }
+    }*/
 
     // Return true if the tile is possible at a given tile placement
     // possibilities : List of possible tiles at a tile placement
@@ -48,6 +48,16 @@ public class OutputGrid : MonoBehaviour
     // dictTuile : All existing tiles 
     public void UpdateGrid(List<Tuile>[] tuile, List<Tuile> dictTuile)
     {
+
+        // Delete the previous display
+        Clear();
+
+        // Retrieve number of rows and cols and tilesize
+        int width = this.gameObject.GetComponent<WFC>().width;
+        int height = this.gameObject.GetComponent<WFC>().height;
+        int depth = this.gameObject.GetComponent<WFC>().depth;
+        int tileSize = this.gameObject.GetComponent<WFC>().gridsize;
+
         // Size of the canvas
         float gridW = width * tileSize;
         float gridH = height * tileSize;
@@ -136,6 +146,9 @@ public class OutputGrid : MonoBehaviour
                 }
             }
         }
+
+        // Remove red markers
+        Clean();
     }
 
     // Remove game objects of the previous step
@@ -169,7 +182,7 @@ public class OutputGrid : MonoBehaviour
 #endif
 }
 
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
 [CustomEditor(typeof(OutputGrid))]
 public class OutputGridEditor : Editor
 {
@@ -224,4 +237,4 @@ public class OutputGridEditor : Editor
     }
 
 }
-#endif
+#endif*/

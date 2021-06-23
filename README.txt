@@ -1,5 +1,7 @@
 3D VERSION:
 
+/!\ Data backup is not handled so when you reopen a scene it's better to restart from scratch
+
 1) Create tiles
 - Import/Create your prefab
 - Add the script "Tile" to each one of your prefab
