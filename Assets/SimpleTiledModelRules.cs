@@ -16,6 +16,7 @@ public class SimpleTiledModelRules : MonoBehaviour
     private int height; // y-axis
     private int depth; // z-axis
     private Dictionary<Tuile, int> tileIndices;
+    private List<Tuile> indexTiles;
     private int numTiles;
     private bool[,,] rules;
 
@@ -38,6 +39,13 @@ public class SimpleTiledModelRules : MonoBehaviour
         
         check(t1, t2, back)
     */
+
+    public List<Tuile> getTuiles()
+    {
+        return indexTiles;
+    }
+
+
     public bool check(Tuile tile1, Tuile tile2, Direction direction)
     {
         return rules[tileIndices[tile1], tileIndices[tile2], (int) direction];
@@ -95,10 +103,12 @@ public class SimpleTiledModelRules : MonoBehaviour
         TuileEqualityComparer equalityComparer = new TuileEqualityComparer();
         tileIndices = new Dictionary<Tuile, int>(equalityComparer);
         numTiles = 0;
+        indexTiles = new List<Tuile>();
         foreach (Tuile tile in tiles)
         {
             if (!tileIndices.ContainsKey(tile))
             {
+                indexTiles.Add(tile);
                 tileIndices.Add(tile, numTiles++);
             }
         }

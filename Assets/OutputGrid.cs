@@ -65,10 +65,9 @@ public class OutputGrid : MonoBehaviour
                     // Second term + third term : translation of the entire tile grid to the corner of the canvas
                     //      - second term : center of the first tile to the corner of the canvas
                     //      - third term : shift to put the corner of the first tile to the corner of the canvas
-                    // Fourth term : Take the offset of the pivot point into account
-                    float posX = col * tileSize - gridW / 2 + (float)tileSize / 2 + tuile[col + width * row + height * width * dep][0].offset[0];
-                    float posY = row * -tileSize + gridH / 2 - (float)tileSize / 2 - tuile[col + width * row + height * width * dep][0].offset[1];
-                    float posZ = dep * tileSize - gridD / 2 + (float)tileSize / 2 + tuile[col + width * row + height * width * dep][0].offset[2];
+                    float posX = col * tileSize - gridW / 2 + (float)tileSize / 2;
+                    float posY = row * -tileSize + gridH / 2 - (float)tileSize / 2;
+                    float posZ = dep * tileSize - gridD / 2 + (float)tileSize / 2;
 
                     //Debug.Log(tuile[col + width * row + height * width * dep].Count);
 
@@ -77,7 +76,12 @@ public class OutputGrid : MonoBehaviour
                     {
                         Tuile tile = Instantiate(tuile[col + width * row + height * width * dep][0], transform);
 
-                        tile.transform.localPosition = new Vector3(posX, posY, posZ);
+                        // Fourth term : Take the offset of the pivot point into account
+                        float offsetPosX = posX + tuile[col + width * row + height * width * dep][0].offset[0];
+                        float offsetPosY = posY - tuile[col + width * row + height * width * dep][0].offset[1];
+                        float offsetPosZ = posZ + tuile[col + width * row + height * width * dep][0].offset[2];
+
+                        tile.transform.localPosition = new Vector3(offsetPosX , offsetPosY, offsetPosZ);
 
 
                     }
@@ -114,14 +118,14 @@ public class OutputGrid : MonoBehaviour
 
                                 // Give position of the given "small" tile
                                 // First term : position of the "big" tile (the subgrid starts at the center of the big tile)
-                                // Second term + third term : translation of the entire sub grid to the corner of the "big" tile
-                                //      - second term : center of the first "small" tile to the corner of the "big" tile
-                                //      - third term : shift to put the corner of the first "small" tile to the corner of the "big" tile
-                                // Fourth term : Find the right location for the given "small" tile
-
-                                float localPosX = posX - (float)divid / 2 * tile.transform.localScale.x + (float)tile.transform.localScale.x / 2 + indicex * tile.transform.localScale.x;
-                                float localPosY = posY + (float)divid / 2 * tile.transform.localScale.y + (float)tile.transform.localScale.y / 2 - indicey * tile.transform.localScale.y;
-                                float localPosZ = posZ - (float)divid / 2 * tile.transform.localScale.z + (float)tile.transform.localScale.z / 2 + indicez * tile.transform.localScale.z;
+                                // Second term : Find the right location for the given "small" tile in the subgrid
+                                // Third term + Fourth term : translation of the entire sub grid to the corner of the "big" tile
+                                //      - Third term : center of the first "small" tile to the corner of the "big" tile
+                                //      - Forth term : shift to put the corner of the first "small" tile to the corner of the "big" tile
+                                // Fifth term : Take into account the offset of the tile
+                                float localPosX = posX + indicex * tile.transform.localScale.x - (float) tileSize / 2 + (float)tile.transform.localScale.x / 2 + tile.offset[0] * tile.transform.localScale.x;
+                                float localPosY = posY - indicey * tile.transform.localScale.y + (float) tileSize / 2 - (float)tile.transform.localScale.y / 2 - tile.offset[1] * tile.transform.localScale.y;
+                                float localPosZ = posZ + indicez * tile.transform.localScale.z - (float) tileSize / 2 + (float)tile.transform.localScale.z / 2 + tile.offset[2] * tile.transform.localScale.z;
 
                                 // Place the tile
                                 tile.transform.localPosition = new Vector3(localPosX, localPosY, localPosZ);

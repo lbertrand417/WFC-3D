@@ -1,552 +1,135 @@
 Using pre-set license
-Desktop is 1920 x 1080 @ 60 Hz
+Built from '2021.1/staging' branch; Version is '2021.1.5f1 (3737af19df53) revision 3618735'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.1052; Version 2009; 64bit' Language: 'fr' Physical Memory: 8103 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-Unity
+C:\Program Files\Unity\Hub\Editor\2021.1.5f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/home/betakuwe/Desktop/2A/IGR205-project-seminar/WFC-3D
+C:/Users/Lauriane/OneDrive/Documents/Cours/Telecom/IGR205/WFC-3D/WFC-3D
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-41815
-Successfully changed project path to: /home/betakuwe/Desktop/2A/IGR205-project-seminar/WFC-3D
-/home/betakuwe/Desktop/2A/IGR205-project-seminar/WFC-3D
+54611
+Successfully changed project path to: C:/Users/Lauriane/OneDrive/Documents/Cours/Telecom/IGR205/WFC-3D/WFC-3D
+C:/Users/Lauriane/OneDrive/Documents/Cours/Telecom/IGR205/WFC-3D/WFC-3D
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 160.74 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 122.46 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.11f1 (99c7afb366b3)
-[Subsystems] Discovering subsystems at path /home/betakuwe/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /home/betakuwe/Desktop/2A/IGR205-project-seminar/WFC-3D/Assets
-GLX Extensions: GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_video_sync GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_no_error GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_NV_multigpu_context GLX_ARB_multisample GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_framebuffer_sRGB GLX_NV_copy_image GLX_ARB_get_proc_address 
-Renderer: GeForce GTX 1050/PCIe/SSE2
-Vendor:   NVIDIA Corporation
-Version:  4.5.0 NVIDIA 460.80
-GLES:     0
- GL_AMD_multi_draw_indirect GL_AMD_seamless_cubemap_per_texture GL_AMD_vertex_shader_viewport_index GL_AMD_vertex_shader_layer GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_bindless_texture GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_color_buffer_float GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragmen
-t_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_fragment_shader_interlock GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_polygon_offset_clamp GL_ARB_post_depth_coverage GL_ARB_program_interface_query GL_ARB_provoki
-ng_vertex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_locations GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_ballot GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shader_viewport_layer_array GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sparse_buffer GL_ARB_sparse_texture GL_ARB_sparse_texture2 GL_ARB_sparse_texture_clamp GL_ARB_spirv_extensions GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_A
-RB_texture_barrier GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_filter_anisotropic GL_ARB_texture_filter_minmax GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_t
-ranspose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters 
-GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_multiview_texture_multisample GL_EXT_multiview_timer_query GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_polygon_offset_clamp GL_EXT_post_depth_coverage GL_EXT_provoking_vertex GL_EXT_raster_multisample GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_formatted GL_EXT_shader_image_load_store GL_EXT_shader_integer_mix GL_EXT_shadow_funcs GL_EXT_sparse_texture2 GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_filter_minmax GL_EXT_texture_integer GL_EXT_texture_lod G
-L_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_window_rectangles GL_EXT_x11_sync_object GL_EXT_import_sync_object GL_NV_robustness_video_memory_purge GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KHR_context_flush_control GL_KHR_debug GL_EXT_memory_object GL_EXT_memory_object_fd GL_NV_memory_object_sparse GL_KHR_parallel_shader_compile GL_KHR_no_error GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_EXT_semaphore GL_EXT_semaphore_fd GL_NV_timeline_semaphore GL_KHR_shader_subgroup GL_KTX_buffer_region GL_NV_alpha_to_coverage_dither_control GL_NV_bindless_multi_draw_indirect GL_NV_bindless_multi_draw_indirect_count GL_NV_bindless_texture GL_NV_blend_equation_advanced GL_NV_
-blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffers GL_NV_blend_minmax_factor GL_NV_blend_square GL_NV_clip_space_w_scaling GL_NV_command_list GL_NV_compute_program5 GL_NV_conditional_render GL_NV_conservative_raster GL_NV_conservative_raster_dilate GL_NV_conservative_raster_pre_snap_triangles GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_feature_query GL_NV_fence GL_NV_fill_rectangle GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_coverage_to_color GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_fragment_shader_interlock GL_NV_framebuffer_mixed_samples GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_geometry_shader_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_
-NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_memory_attachment GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_shader_subgroup_partitioned GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_N
-V_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
-OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1875422088
+Initialize engine version: 2021.1.5f1 (3737af19df53)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Lauriane/OneDrive/Documents/Cours/Telecom/IGR205/WFC-3D/WFC-3D/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 520 (ID=0x1916)
+    Vendor:   Intel
+    VRAM:     4051 MB
+    Driver:   22.20.16.4836
 Initialize mono
-Mono path[0] = '/home/betakuwe/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
-Mono path[1] = '/home/betakuwe/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = '/home/betakuwe/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56780
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /home/betakuwe/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.005220 seconds.
-Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 160.99 ms, found 0 plugins.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004314 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 114.94 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.127 seconds
+- Completed reload, in  2.294 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004744 seconds.
+Registered in 0.007462 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.103 seconds
+- Completed reload, in  1.677 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.02 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2668 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.9 MB.
-System memory in use after: 91.1 MB.
+Unloading 2670 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.2 MB.
+System memory in use after: 98.4 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3106.
-Total: 5.428509 ms (FindLiveObjects: 0.560755 ms CreateObjectMapping: 0.340514 ms MarkObjects: 4.247706 ms  DeleteObjects: 0.276634 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/TileTexture.png
-  artifactKey: Guid(3e523d9fa0607f243870cc229d9a5141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TileTexture.png using Guid(3e523d9fa0607f243870cc229d9a5141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e27b6a9917a99a068140a0d621f4a143') in 0.087979 seconds
-  Import took 0.097929 seconds .
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3123.
+Total: 4.744900 ms (FindLiveObjects: 0.490200 ms CreateObjectMapping: 0.344500 ms MarkObjects: 3.791400 ms  DeleteObjects: 0.116600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.201826 seconds.
-  path: Assets/TileTexture.png
-  artifactKey: Guid(3e523d9fa0607f243870cc229d9a5141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TileTexture.png using Guid(3e523d9fa0607f243870cc229d9a5141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e27b6a9917a99a068140a0d621f4a143') in 0.010881 seconds
-  Import took 0.018670 seconds .
-
+  path: Assets/Resources
+  artifactKey: Guid(9e0188cd814dbb842a12d22ede6676db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(9e0188cd814dbb842a12d22ede6676db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '432762df61c16219c8e92f9981156cfb') in 0.012445 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.290529 seconds.
-  path: Assets/Tuile.cs
-  artifactKey: Guid(c8d044d17f3ba0145ae3178a2733675c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tuile.cs using Guid(c8d044d17f3ba0145ae3178a2733675c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e26e1c62364915898ef25330184994') in 0.001951 seconds
-  Import took 0.010977 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.050960 seconds.
-  path: Assets/Tuile.cs
-  artifactKey: Guid(c8d044d17f3ba0145ae3178a2733675c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tuile.cs using Guid(c8d044d17f3ba0145ae3178a2733675c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e26e1c62364915898ef25330184994') in 0.002004 seconds
-  Import took 0.011638 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.494950 seconds.
-  path: Assets/SemiInteractiveGrid.cs
-  artifactKey: Guid(03fa6f4ef1461fa41b0329276b44dcfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SemiInteractiveGrid.cs using Guid(03fa6f4ef1461fa41b0329276b44dcfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb64db96015f842607395ad4864fc104') in 0.002349 seconds
-  Import took 0.012723 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.546147 seconds.
-  path: Assets/SemiInteractiveGrid.cs
-  artifactKey: Guid(03fa6f4ef1461fa41b0329276b44dcfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SemiInteractiveGrid.cs using Guid(03fa6f4ef1461fa41b0329276b44dcfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb64db96015f842607395ad4864fc104') in 0.001432 seconds
-  Import took 0.009248 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.132677 seconds.
-  path: Assets/OutputGrid.cs
-  artifactKey: Guid(b52e2023303dae54fb3c93ffda306361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/OutputGrid.cs using Guid(b52e2023303dae54fb3c93ffda306361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279e21555f29fe29902eb0a08ac51b65') in 0.001633 seconds
-  Import took 0.009262 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006402 seconds.
-  path: Assets/OutputGrid.cs
-  artifactKey: Guid(b52e2023303dae54fb3c93ffda306361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/OutputGrid.cs using Guid(b52e2023303dae54fb3c93ffda306361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279e21555f29fe29902eb0a08ac51b65') in 0.001350 seconds
-  Import took 0.009408 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1033.805026 seconds.
-  path: Assets/Resources/Cube.prefab
-  artifactKey: Guid(fcf237d1bd8f98848bd85ca3406a5108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Cube.prefab using Guid(fcf237d1bd8f98848bd85ca3406a5108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b36a15eadde988c50e184c7cc12cb165') in 0.278108 seconds
-  Import took 0.286021 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/Resources/MyTileMaterial.mat
-  artifactKey: Guid(c929034c4b50d5c488de5a29351a6004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/MyTileMaterial.mat using Guid(c929034c4b50d5c488de5a29351a6004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e419080d25e17d37445d07dd3b3b07') in 0.643471 seconds
-  Import took 0.650802 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/Resources/Cube_bleu.prefab
-  artifactKey: Guid(a7ccd47275b08a242ab9d98e9264d402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Cube_bleu.prefab using Guid(a7ccd47275b08a242ab9d98e9264d402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b39f008145289596ed7f13014b391532') in 0.016201 seconds
-  Import took 0.024126 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/Resources/modules-shared.blend
-  artifactKey: Guid(4b7e279d4583f164e92eb8246472602f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/modules-shared.blend using Guid(4b7e279d4583f164e92eb8246472602f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46ae31c910a4baeec1cbdb31a9eb459e') in 0.792594 seconds
-  Import took 0.805653 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Resources/Cube_blanc.prefab
-  artifactKey: Guid(c5fb3e6b89b8f5b44a4e7b0ec304193b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Cube_blanc.prefab using Guid(c5fb3e6b89b8f5b44a4e7b0ec304193b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a0b6b8b077d5033d47e693485cad5e2') in 0.013273 seconds
-  Import took 0.025842 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.720837 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4014df6335ec58f0356861d0b9985791') in 0.002082 seconds
-  Import took 0.010179 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 216.084571 seconds.
-  path: Assets/Resources/3DTiles
-  artifactKey: Guid(c4bf4bc5f9f785b4e85004b62f5ee1f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles using Guid(c4bf4bc5f9f785b4e85004b62f5ee1f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a3e16ee0d7fedf744f4522f6b84dbfd') in 0.002213 seconds
-  Import took 0.013074 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.602482 seconds.
-  path: Assets/Resources/3DTiles/CeilCorner.prefab
-  artifactKey: Guid(1b209e11ac0d97448bb0621ebe173db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/CeilCorner.prefab using Guid(1b209e11ac0d97448bb0621ebe173db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7076d32fc3b4cdaee4fc33c17d8751d') in 0.014837 seconds
-  Import took 0.023608 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Resources/3DTiles/PillarCorner.prefab
-  artifactKey: Guid(54e69ac162c7b394d8b2cef15b20d987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/PillarCorner.prefab using Guid(54e69ac162c7b394d8b2cef15b20d987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f916ce7ef08f465e065598a71ef7ef5') in 0.013305 seconds
-  Import took 0.022026 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/Resources/3DTiles/FullAir_PillarBottom.prefab
-  artifactKey: Guid(2eeb8b137882b1f4db15d286fc5dc0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/FullAir_PillarBottom.prefab using Guid(2eeb8b137882b1f4db15d286fc5dc0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd60fc1695c28d4cf383c250a4f8c8df') in 0.013390 seconds
-  Import took 0.020963 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/Resources/3DTiles/Roof_Pillar.prefab
-  artifactKey: Guid(79a76439821043d4182bda43a52529b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/Roof_Pillar.prefab using Guid(79a76439821043d4182bda43a52529b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fad5bf52de803b10e7e703f3c7a9ef2') in 0.014405 seconds
-  Import took 0.022502 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000315 seconds.
-  path: Assets/Resources/3DTiles/TowerWall.prefab
-  artifactKey: Guid(c7b2db569524a48438992b763a6dede4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/TowerWall.prefab using Guid(c7b2db569524a48438992b763a6dede4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6cd56e78bb660179f4bf27225a14757') in 0.014128 seconds
-  Import took 0.022271 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000303 seconds.
-  path: Assets/Resources/3DTiles/InnerCornerBottom.prefab
-  artifactKey: Guid(5eeb36d7c1702d942bac3938a12c1f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/InnerCornerBottom.prefab using Guid(5eeb36d7c1702d942bac3938a12c1f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e5d4fcafad271f422928c40223f673') in 0.014744 seconds
-  Import took 0.023084 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/Resources/3DTiles/WingDoubleCorner.prefab
-  artifactKey: Guid(58930f78cc8637f4a9be880f11c69461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/WingDoubleCorner.prefab using Guid(58930f78cc8637f4a9be880f11c69461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aacbcf0f8b82f6aa58368e23351ef021') in 0.015002 seconds
-  Import took 0.024081 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000288 seconds.
-  path: Assets/Resources/3DTiles/InnerCorner.prefab
-  artifactKey: Guid(bab8d8afe89044a4c90771e4e8228b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/InnerCorner.prefab using Guid(bab8d8afe89044a4c90771e4e8228b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09f1bd5d8616a570cab0e2ab65d3882d') in 0.014759 seconds
-  Import took 0.023472 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/Resources/3DTiles/WallTop.prefab
-  artifactKey: Guid(4849a0753b5fb294a91f526e81a1d3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/WallTop.prefab using Guid(4849a0753b5fb294a91f526e81a1d3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4b939bed338ba511f5230c19887af39') in 0.016384 seconds
-  Import took 0.026543 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/Resources/3DTiles/FullAir_Pillar.prefab
-  artifactKey: Guid(bf2129b9adee14347b4885e90e012a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/FullAir_Pillar.prefab using Guid(bf2129b9adee14347b4885e90e012a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73f2e0cecfc9504119a252e30b4928b7') in 0.018228 seconds
-  Import took 0.030871 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000576 seconds.
-  path: Assets/Resources/3DTiles/WallBottom.prefab
-  artifactKey: Guid(e296a317a0cf82a4ba1abc39b9ab4e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/WallBottom.prefab using Guid(e296a317a0cf82a4ba1abc39b9ab4e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5e8e7fee429d8437bc4a30d4aeea37b') in 0.019476 seconds
-  Import took 0.031710 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/Resources/3DTiles/CornerBottom.prefab
-  artifactKey: Guid(fd12c7adf717aae4aa58f63955f71d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/CornerBottom.prefab using Guid(fd12c7adf717aae4aa58f63955f71d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '084beab2a0d91eb592bb03d37a5b9c36') in 0.015123 seconds
-  Import took 0.025960 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/Resources/3DTiles/Wall.prefab
-  artifactKey: Guid(28370fe13677dd0428a16137b7c09b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/Wall.prefab using Guid(28370fe13677dd0428a16137b7c09b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408678b08b884b1ca0fc9331baaf77c5') in 0.017693 seconds
-  Import took 0.027124 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/Resources/3DTiles/PillarTowerCorner.prefab
-  artifactKey: Guid(030e95472e943fd47b34e2b87d1cd62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/PillarTowerCorner.prefab using Guid(030e95472e943fd47b34e2b87d1cd62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '821d9d163dce2895983b6e14e0595857') in 0.015878 seconds
-  Import took 0.026628 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/Resources/3DTiles/CornerTop.prefab
-  artifactKey: Guid(14ec8f74742a194409954d8bab7b7907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/CornerTop.prefab using Guid(14ec8f74742a194409954d8bab7b7907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceb21c12b49555c83e48b69c27284c4a') in 0.012871 seconds
-  Import took 0.020872 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000392 seconds.
-  path: Assets/Resources/3DTiles/WallTop_Pillar.prefab
-  artifactKey: Guid(8046ecd223ab3094097c1597ffb8051c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/WallTop_Pillar.prefab using Guid(8046ecd223ab3094097c1597ffb8051c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8068cf6c63dbd7b6bdc41dbaeae4bca') in 0.013819 seconds
-  Import took 0.022518 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000310 seconds.
-  path: Assets/Resources/3DTiles/PillarWall.001.prefab
-  artifactKey: Guid(d53973237a055834a8bb527c66aebf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/PillarWall.001.prefab using Guid(d53973237a055834a8bb527c66aebf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd4de361674d684e0d9cea344a7bb41') in 0.013400 seconds
-  Import took 0.022257 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/Resources/3DTiles/RoofCorner.prefab
-  artifactKey: Guid(6be2155a028aaa042ae59abaf8c86766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/RoofCorner.prefab using Guid(6be2155a028aaa042ae59abaf8c86766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba3c4aa115c6d9a7c2c96082ed207c82') in 0.014651 seconds
-  Import took 0.022588 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000374 seconds.
-  path: Assets/Resources/3DTiles/InnerCornerTop.prefab
-  artifactKey: Guid(2855a4c6ac46a224480a79b7a8d2900b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/InnerCornerTop.prefab using Guid(2855a4c6ac46a224480a79b7a8d2900b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5faa373343020996e182601c4bbc251f') in 0.014483 seconds
-  Import took 0.023364 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000310 seconds.
-  path: Assets/Resources/3DTiles/WallTop_Slopy.prefab
-  artifactKey: Guid(a48ff7d6824c4cd4caa4ff6bbcc80d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/WallTop_Slopy.prefab using Guid(a48ff7d6824c4cd4caa4ff6bbcc80d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d9471946caed7a594b99d8fc11e288') in 0.014458 seconds
-  Import took 0.022772 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/Resources/3DTiles/RoofWall.prefab
-  artifactKey: Guid(67461339d3d6a7d4d9f9f4336346bc63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/RoofWall.prefab using Guid(67461339d3d6a7d4d9f9f4336346bc63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2fcdecf01ea8114607a008885f97dd2') in 0.014629 seconds
-  Import took 0.022928 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/Resources/3DTiles/CornerTop_Pillar.prefab
-  artifactKey: Guid(c72442fa111092a4f969102598627223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/CornerTop_Pillar.prefab using Guid(c72442fa111092a4f969102598627223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c95aea1e5da9504d875e6bad3351139') in 0.014277 seconds
-  Import took 0.023751 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/Resources/3DTiles/CeilWall.prefab
-  artifactKey: Guid(8e1a9b23cb7c6904083ae5488105fb52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/CeilWall.prefab using Guid(8e1a9b23cb7c6904083ae5488105fb52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cab177d9953718543ede1b4b43d25161') in 0.014275 seconds
-  Import took 0.023428 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/Resources/3DTiles/DoubleCornerBottom.prefab
-  artifactKey: Guid(f6033a2743234814ebba0e6f43316274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/DoubleCornerBottom.prefab using Guid(f6033a2743234814ebba0e6f43316274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ae8ae8828e9eccba47c7af70908c8c') in 0.014645 seconds
-  Import took 0.024057 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000310 seconds.
-  path: Assets/Resources/3DTiles/InnerCornerTop_Pillar.prefab
-  artifactKey: Guid(083d7f9e120c3cf428b364564eacb0df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/InnerCornerTop_Pillar.prefab using Guid(083d7f9e120c3cf428b364564eacb0df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb8f3c4c70916ccbd55a1a4bf648e1aa') in 0.012786 seconds
-  Import took 0.021770 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000274 seconds.
-  path: Assets/Resources/3DTiles/DoubleCorner.prefab
-  artifactKey: Guid(a43acb5bf7115a44185861ad02880182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/DoubleCorner.prefab using Guid(a43acb5bf7115a44185861ad02880182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41c7c81fa6b0b8238d71bca0f3ede55e') in 0.017441 seconds
-  Import took 0.029326 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/Resources/3DTiles/WingTerrasse.prefab
-  artifactKey: Guid(e032cd2a62c3cda4fbdd4cfb3ccf549c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/WingTerrasse.prefab using Guid(e032cd2a62c3cda4fbdd4cfb3ccf549c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef36371b8f7bcaf85bc85b4a05c7d5e0') in 0.017965 seconds
-  Import took 0.030764 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Resources/3DTiles/CornerTop_Slopy.prefab
-  artifactKey: Guid(65ccd21248127ac4aa2217cc9cbf130d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/CornerTop_Slopy.prefab using Guid(65ccd21248127ac4aa2217cc9cbf130d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7c4c3fbdc7b374ead8305d1147387c4') in 0.017336 seconds
-  Import took 0.029480 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Resources/3DTiles/DoubleCornerTop.prefab
-  artifactKey: Guid(412ae385f9a08c44e80265b2d86dd017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/DoubleCornerTop.prefab using Guid(412ae385f9a08c44e80265b2d86dd017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c3f412f6981f61a0743071b7edb181') in 0.012514 seconds
-  Import took 0.020842 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
+  Time since last request: 143.787074 seconds.
   path: Assets/Resources/3DTiles/Corner.prefab
   artifactKey: Guid(d62c7f2643f36af4181a19fe6be596e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/Corner.prefab using Guid(d62c7f2643f36af4181a19fe6be596e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97000963b2a7d482d01bc15d99cb27d1') in 0.013160 seconds
-  Import took 0.020874 seconds .
-
+Start importing Assets/Resources/3DTiles/Corner.prefab using Guid(d62c7f2643f36af4181a19fe6be596e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c09ed8fb0d08da4749b59d5d79e976') in 0.322986 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Resources/3DTiles/PillarWall.prefab
-  artifactKey: Guid(464621195dc02cd468a1663791759288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/PillarWall.prefab using Guid(464621195dc02cd468a1663791759288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb3bbd643c7b1b1b89b06a824ad3398') in 0.014485 seconds
-  Import took 0.022603 seconds .
-
+  Time since last request: 100.209103 seconds.
+  path: Assets/Resources/3DTiles/CornerBottom.prefab
+  artifactKey: Guid(fd12c7adf717aae4aa58f63955f71d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3DTiles/CornerBottom.prefab using Guid(fd12c7adf717aae4aa58f63955f71d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5ec782fabd60abb73910247a9ec01ec') in 0.023464 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/Resources/3DTiles/WingInnerCorner.prefab
-  artifactKey: Guid(94dda95bde26db148b51dccf73a04533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/WingInnerCorner.prefab using Guid(94dda95bde26db148b51dccf73a04533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '770542df7a0d1b69cd9cf57652dd8cb0') in 0.017949 seconds
-  Import took 0.025666 seconds .
-
+  Time since last request: 38.681276 seconds.
+  path: Assets/Resources/3DTiles/Wall.prefab
+  artifactKey: Guid(28370fe13677dd0428a16137b7c09b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3DTiles/Wall.prefab using Guid(28370fe13677dd0428a16137b7c09b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '742af39e1d4069efd4f89326ea6b7220') in 0.023511 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Resources/3DTiles/FullAir.prefab
-  artifactKey: Guid(d0a52ee796650f54fb209a37f4ca250d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/FullAir.prefab using Guid(d0a52ee796650f54fb209a37f4ca250d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc6f6a4393c1da79ede111d1e31f7838') in 0.013008 seconds
-  Import took 0.021501 seconds .
-
+  Time since last request: 3.866981 seconds.
+  path: Assets/Resources/3DTiles/Wall.prefab
+  artifactKey: Guid(28370fe13677dd0428a16137b7c09b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3DTiles/Wall.prefab using Guid(28370fe13677dd0428a16137b7c09b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64fdf07288c9f57601a8ee575d4da982') in 0.021151 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/Resources/3DTiles/TestGrid.prefab
-  artifactKey: Guid(178b30ad3634725469e315d8bbf42625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/TestGrid.prefab using Guid(178b30ad3634725469e315d8bbf42625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23a79c3153012ce2bd3d14ed2d7b7be9') in 0.017792 seconds
-  Import took 0.026283 seconds .
-
+  Time since last request: 111.200213 seconds.
+  path: Assets/Resources/3DTiles/Wall (1).prefab
+  artifactKey: Guid(510ae52608b3a144d84985ab58fcec63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3DTiles/Wall (1).prefab using Guid(510ae52608b3a144d84985ab58fcec63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff12510c35e4e1d9c8d7c734a97631a') in 0.024325 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000243 seconds.
+  Time since last request: 44.328199 seconds.
+  path: Assets/Resources/3DTiles/CeilWall.001 (1).prefab
+  artifactKey: Guid(e8bd43f87d6891e4d9a7aec2bbc9abb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3DTiles/CeilWall.001 (1).prefab using Guid(e8bd43f87d6891e4d9a7aec2bbc9abb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea45915c515c79a55bd5a3428eaab92') in 0.022351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 69.531592 seconds.
   path: Assets/Resources/3DTiles/CeilInnerCorner.prefab
   artifactKey: Guid(a420786d005374a43b543fe5c6848fbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/CeilInnerCorner.prefab using Guid(a420786d005374a43b543fe5c6848fbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bc555f3ba12f3de6677f2adafbd1b33') in 0.013855 seconds
-  Import took 0.021688 seconds .
-
+Start importing Assets/Resources/3DTiles/CeilInnerCorner.prefab using Guid(a420786d005374a43b543fe5c6848fbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f88d18bc6929c61b295aea0c2e78c852') in 0.027867 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/Resources/3DTiles/RoofDoubleCorner.prefab
-  artifactKey: Guid(dc1499fd3d8945c40904757bc9d71bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/RoofDoubleCorner.prefab using Guid(dc1499fd3d8945c40904757bc9d71bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd1eb370b70278b9f8637712b6823a2') in 0.014839 seconds
-  Import took 0.022418 seconds .
-
+  Time since last request: 154.505082 seconds.
+  path: Assets/Resources/3DTiles/FullAir.prefab
+  artifactKey: Guid(d0a52ee796650f54fb209a37f4ca250d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3DTiles/FullAir.prefab using Guid(d0a52ee796650f54fb209a37f4ca250d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b62c3de3153277ad61b2903bbd87227') in 0.024489 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/Resources/3DTiles/CeilWall.001.prefab
-  artifactKey: Guid(f12a1895df269164a89b7701f089f8e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/CeilWall.001.prefab using Guid(f12a1895df269164a89b7701f089f8e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16cedd97bd4cb71d31749d908e4a1b22') in 0.012525 seconds
-  Import took 0.020356 seconds .
-
+  Time since last request: 251.553857 seconds.
+  path: Assets/WFC.cs
+  artifactKey: Guid(cf3973febef0296428ce6f7828b55989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WFC.cs using Guid(cf3973febef0296428ce6f7828b55989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '496ade7116c30d3418346d6d2b8ef856') in 0.063869 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/Resources/3DTiles/RoofInnerCorner.prefab
-  artifactKey: Guid(3d79c36d4f0832f409be7fc5243213f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/RoofInnerCorner.prefab using Guid(3d79c36d4f0832f409be7fc5243213f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84699443f070ec187a4f0cb46c257e5f') in 0.016023 seconds
-  Import took 0.023678 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/Resources/3DTiles/DoubleCornerTop_Pillar.prefab
-  artifactKey: Guid(53315321184c80b4f8c70f48ae633101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/DoubleCornerTop_Pillar.prefab using Guid(53315321184c80b4f8c70f48ae633101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '151831ff990fe64b416baad6519d52f8') in 0.013509 seconds
-  Import took 0.020912 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/Resources/3DTiles/Roof.prefab
-  artifactKey: Guid(5f500c77216fd9842961f2c35a34b009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/Roof.prefab using Guid(5f500c77216fd9842961f2c35a34b009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7342fd343cf9e538b4a97b78308102a0') in 0.014691 seconds
-  Import took 0.023830 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Resources/3DTiles/TowerCorner.prefab
-  artifactKey: Guid(a81b6faf49d767046b60662271fc90f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/TowerCorner.prefab using Guid(a81b6faf49d767046b60662271fc90f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ead1d73b97adc75f8586b2b32a87cdf1') in 0.013591 seconds
-  Import took 0.021365 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/Resources/3DTiles/TowerDoubleCorner.prefab
-  artifactKey: Guid(7f9d242edd79d654bb3f7988cd947cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3DTiles/TowerDoubleCorner.prefab using Guid(7f9d242edd79d654bb3f7988cd947cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01d829ca25c7b75ebc75202cb161c830') in 0.013230 seconds
-  Import took 0.021031 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004795 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.517 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2664 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.8 MB.
-System memory in use after: 93.0 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3157.
-Total: 6.242152 ms (FindLiveObjects: 0.751639 ms CreateObjectMapping: 0.339262 ms MarkObjects: 5.005171 ms  DeleteObjects: 0.142505 ms)
-
+  Time since last request: 43.197763 seconds.
+  path: Assets/WFC.cs
+  artifactKey: Guid(cf3973febef0296428ce6f7828b55989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WFC.cs using Guid(cf3973febef0296428ce6f7828b55989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c88b37b13806c01f71aefd03662ac864') in 0.036146 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
