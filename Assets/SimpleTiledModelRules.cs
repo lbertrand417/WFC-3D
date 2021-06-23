@@ -50,6 +50,10 @@ public class SimpleTiledModelRules : MonoBehaviour
     {
         return rules[tileIndices[tile1], tileIndices[tile2], (int) direction];
     }
+    public List<Tuile> getTuiles()
+    {
+        return indexTiles;
+    }
 
     public void generateRules()
     {
@@ -127,7 +131,7 @@ public class SimpleTiledModelRules : MonoBehaviour
     {
         foreach (KeyValuePair<Tuile, int> pair in tileIndices)
         {
-            Debug.Log(pair.Key.tilename + " " + pair.Value);
+            Debug.Log(pair.Key.gameObject.name + " " + pair.Value + " " + indexTiles[pair.Value].gameObject.name);
         }
         Debug.Log("numTiles " + numTiles);
     }
@@ -198,7 +202,7 @@ public class SimpleTiledModelRulesEditor : Editor
             // me.testSampleTiles();
             //me.sampleTiles();
             me.generateIndices();
-            //me.testGenerateIndices();
+            me.testGenerateIndices();
             me.generateRules();
             me.testGenerateRules();
         }
