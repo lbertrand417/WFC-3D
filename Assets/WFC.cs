@@ -7,7 +7,7 @@ using UnityEditor;
 #endif
 using UnityEngine;
 
-//[RequireComponent(typeof(BoxCollider))]
+[RequireComponent(typeof(BoxCollider))]
 [RequireComponent(typeof(OutputGrid))]
 public class WFC : MonoBehaviour
 {
@@ -25,9 +25,10 @@ public class WFC : MonoBehaviour
 
     private static bool[,] grid;
 
+    private bool contradiction = false;
+
     void OnValidate()
     {
-        // Should be in the "main" script
         BoxCollider bounds = this.GetComponent<BoxCollider>();
         bounds.size = new Vector3(width * gridsize, (height * gridsize), depth * gridsize);
     }
@@ -42,12 +43,12 @@ public class WFC : MonoBehaviour
             {
                 for (int b = 0; b < numberTiles; b++)
                 {
-                    //Debug.Log(rules.check(listTuile[b], listTuile[a], d));
                     result[b] = result[b] || rules.check(listTuile[b], listTuile[a], d);
                 }
 
             }
         }
+
 
         for (int j = 0; j < numberTiles; j++)
         {
@@ -66,47 +67,49 @@ public class WFC : MonoBehaviour
     public void WFCfunction(int x)
     {
         //nouvelle itération de WFCfunction
-        Debug.Log("examine " + x);
+        //Debug.Log("examine " + x);
 
         List<Tuile>[] test = fromGridToList();
 
 
-        if (x % (width * height) > width - 1)
+        if ((int) ((x % (width * height)) / width) > 0)
         {
             if (sparse(x, x - width, Direction.Top))
             {
                 WFCfunction(x - width);
             }
         }
-        if (x % width < width - 1)
+        if ((x % (width * height)) % width < width - 1)
         {
             if (sparse(x, x + 1, Direction.Right))
             {
                 WFCfunction(x + 1);
             }
         }
-        if (x % (width * height) < (height - 1) * width)
+        //if (x % (width * height) < (height - 1) * width)
+        if ((int) ((x % (width * height)) / width) < height - 1)
         {
             if (sparse(x, x + width, Direction.Bottom))
             {
                 WFCfunction(x + width);
             }
         }
-        if (x % width > 0)
+        //if (x % width > 0)
+        if ((x % (width * height)) % width > 0)
         {
             if (sparse(x, x - 1, Direction.Left))
             {
                 WFCfunction(x - 1);
             }
         }
-        if (x > width * height* (depth - 1 ))
+        if ((int) (x / (width * height)) > 0)
         {
             if(sparse(x, x - width * height, Direction.Front))
             {
                 WFCfunction(x - width * height);
             }
         }
-        if (x < width * height * (depth - 1))
+        if ((int) (x / (width * height)) < (depth - 1))
         {
             if(sparse(x, x + width * height, Direction.Back))
             {
@@ -123,11 +126,10 @@ public class WFC : MonoBehaviour
             List<Tuile> possibilities = new List<Tuile>();
             for (int indiceDict = 0; indiceDict < numberTiles; indiceDict++)
             {
-                /*if (grid[indice, indiceDict])
+                if (grid[indice, indiceDict])
                 {
                     possibilities.Add(rules.getTuiles()[indiceDict]);
-                }*/
-                possibilities.Add(rules.getTuiles()[indiceDict]);
+                }
             }
             Debug.Log("Number of poss :" + possibilities.Count);
             convertedGrid[indice] = possibilities;
@@ -137,15 +139,29 @@ public class WFC : MonoBehaviour
 
     public void Run()
     {
-        Debug.Log("OK");
+        //Debug.Log("OK");
         listTuile = rules.getTuiles();
         numberTiles = listTuile.Count;
 
-        if (Finished() || grid == null)
+        // If the grid isn't initialized yet restart
+        if (grid == null)
         {
             Restart();
         }
 
+        // If the variables have changed restart
+        if (grid.GetLength(0) != width * height * depth || numberTiles != listTuile.Count)
+        {
+            Restart();
+        }
+
+        // If the previous output was found restart
+        if (Finished())
+        {
+            Restart();
+        }
+
+        // Run a step while the output is not totally filled in
         bool finished = false;
         while (!finished)
         {
@@ -153,13 +169,20 @@ public class WFC : MonoBehaviour
             finished = Finished();
         }
 
-        this.gameObject.GetComponent<OutputGrid>().UpdateGrid(fromGridToList(), rules.getTuiles());
+        // Print the final output
+        this.gameObject.GetComponent<OutputGrid>().UpdateGrid(fromGridToList(), listTuile);
 
     }
 
     public void Restart()
     {
+        // Initialize variables
+        contradiction = false;
+        listTuile = rules.getTuiles();
+        numberTiles = listTuile.Count;
+
         grid = new bool[width * height * depth, numberTiles];
+        
         for (int i = 0; i < width * height * depth; i++)
         {
             for (int j = 0; j < numberTiles; j++)
@@ -168,9 +191,12 @@ public class WFC : MonoBehaviour
             }
         }
 
+        // Clear the canvas
         this.gameObject.GetComponent<OutputGrid>().Clear();
     }
 
+
+    // If there is only one true per slot then the algorithm is finished
     private bool Finished()
     {
         if (grid == null)
@@ -190,7 +216,7 @@ public class WFC : MonoBehaviour
                     }
                 }
 
-                if (numberTrue > 1)
+                if (numberTrue != 1)
                 {
                     return false;
                 }
@@ -199,12 +225,22 @@ public class WFC : MonoBehaviour
         return true;
     }
 
+    // Run one step of the WFC (until the end of the propagation)
     public void RunOneStep()
     {
-        listTuile = rules.getTuiles();
-        numberTiles = listTuile.Count;
+        
 
-        if (grid == null)
+        // If there were a contradiction or the grid doesn't exist then restart
+        if (grid == null || contradiction)
+        {
+            Restart();
+        }
+
+        // If the size of the grid or if the size of the dictionnary of tiles changed restart
+        // The dictionnary is still reload in case the new one is different but has the same number of tiles
+        // TO DO: Must check the list itself because the dict will be reinitialized but not the grid
+        listTuile = rules.getTuiles();
+        if (grid.GetLength(0) != width * height * depth || numberTiles != listTuile.Count)
         {
             Restart();
         }
@@ -213,7 +249,7 @@ public class WFC : MonoBehaviour
         {
             List<int> entropy = new List<int>();
             int mins = int.MaxValue;
-            for (int i = 0; i < width * height; i++)
+            for (int i = 0; i < width * height * depth; i++)
             {
                 int s = 0;
                 for (int j = 0; j < numberTiles; j++)
@@ -227,11 +263,10 @@ public class WFC : MonoBehaviour
                 {
                     Debug.Log("aie une des cases n'a plus aucune possibilité");
                     // IMPORTANT il faudrait recommencer -> rappeler Run()
-                    Restart();
-                    RunOneStep();
-                    break;
+                    // If s=0, then there's no solution so this is a contradiction.
+                    contradiction = true;
                 }
-                if (s >= 1)
+                if (s > 1)
                 {
                     if (s == mins)
                     { // i est aussi d'entropie minimale -> on l'ajoute
@@ -246,25 +281,33 @@ public class WFC : MonoBehaviour
                 }
             }
 
-            System.Random aleatoire = new System.Random();
-            // b case random avec la plus petite entropie
-            int b = aleatoire.Next(entropy.Count);
-            int ind = entropy[b];
-            // tuile a choisi random parmis les 'true' de la case b
-            int a = aleatoire.Next(mins);
-            for (int i = 0; i < numberTiles; i++)
+            // The WFC must run only if there is no contradiction
+            if (!contradiction)
             {
-                if (grid[ind, i])
+                System.Random aleatoire = new System.Random();
+                // b case random avec la plus petite entropie
+                int b = aleatoire.Next(entropy.Count);
+                int ind = entropy[b];
+                // tuile a choisi random parmis les 'true' de la case b
+                int a = aleatoire.Next(mins);
+                //Debug.Log("a" + a);
+                for (int i = 0; i < numberTiles; i++)
                 {
-                    if (a != 0)
+                    if (grid[ind, i])
                     {
-                        grid[ind, i] = false;
+                        if (a != 0)
+                        {
+                            grid[ind, i] = false;
+                        }
+                        a--;
                     }
-                    a--;
                 }
-            }
 
-            WFCfunction(ind);
+                WFCfunction(ind);
+            } else
+            {
+                Debug.Log("The program encounters a contradiction. Try again.");
+            }
         }
     }
 

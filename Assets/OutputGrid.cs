@@ -6,25 +6,9 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider))]
+//[RequireComponent(typeof(BoxCollider))]
 public class OutputGrid : MonoBehaviour
 {
-
-    //public List<Tuile> globalList;
-
-    // Raw values
-    /*private int width = 2;
-    private int height = 2;
-    private int depth = 2;
-    private int tileSize = 1;*/
-
-#if UNITY_EDITOR
-    /*void OnValidate()
-    {
-        // Should be in the "main" script
-        BoxCollider bounds = this.GetComponent<BoxCollider>();
-        bounds.size = new Vector3(width * tileSize, (height * tileSize), depth * tileSize);
-    }*/
 
     // Return true if the tile is possible at a given tile placement
     // possibilities : List of possible tiles at a tile placement
@@ -179,62 +163,4 @@ public class OutputGrid : MonoBehaviour
             }
         }
     }
-#endif
 }
-
-/*#if UNITY_EDITOR
-[CustomEditor(typeof(OutputGrid))]
-public class OutputGridEditor : Editor
-{
-    public override void OnInspectorGUI()
-    {
-        OutputGrid me = (OutputGrid)target;
-        if (GUILayout.Button("RUN"))
-        {
-
-            List<Tuile>[] myGrid = new List<Tuile>[8];
-
-            List<Tuile> list1 = new List<Tuile>();
-            list1.Add(me.globalList[0]);
-            myGrid[0] = list1;
-
-            List<Tuile> list2 = new List<Tuile>();
-            list2.Add(me.globalList[0]);
-            list2.Add(me.globalList[1]);
-            myGrid[1] = list2;
-
-            List<Tuile> list3 = new List<Tuile>();
-            list3.Add(me.globalList[1]);
-            myGrid[2] = list3;
-
-            List<Tuile> list4 = new List<Tuile>();
-            list4.Add(me.globalList[0]);
-            myGrid[3] = list4;
-
-            List<Tuile> list5 = new List<Tuile>();
-            list5.Add(me.globalList[1]);
-            myGrid[4] = list5;
-
-            List<Tuile> list6 = new List<Tuile>();
-            list6.Add(me.globalList[1]);
-            myGrid[5] = list6;
-
-            List<Tuile> list7 = new List<Tuile>();
-            list7.Add(me.globalList[0]);
-            list7.Add(me.globalList[1]);
-            list7.Add(me.globalList[2]);
-            myGrid[6] = list7;
-
-            List<Tuile> list8 = new List<Tuile>();
-            list8.Add(me.globalList[0]);
-            myGrid[7] = list8;
-
-            me.Clear();
-            me.UpdateGrid(myGrid, me.globalList);
-            me.Clean();
-        }
-        DrawDefaultInspector();
-    }
-
-}
-#endif*/
