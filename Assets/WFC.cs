@@ -139,9 +139,7 @@ public class WFC : MonoBehaviour
 
     public void Run()
     {
-        //Debug.Log("OK");
         listTuile = rules.getTuiles();
-        numberTiles = listTuile.Count;
 
         // If the grid isn't initialized yet restart
         if (grid == null)
@@ -167,6 +165,11 @@ public class WFC : MonoBehaviour
         {
             RunOneStep();
             finished = Finished();
+
+            if (contradiction)
+            {
+                break;
+            }
         }
 
         // Print the final output
@@ -262,8 +265,7 @@ public class WFC : MonoBehaviour
                 if (s == 0)
                 {
                     Debug.Log("aie une des cases n'a plus aucune possibilité");
-                    // IMPORTANT il faudrait recommencer -> rappeler Run()
-                    // If s=0, then there's no solution so this is a contradiction.
+                    // If s=0, then there's a contradiction.
                     contradiction = true;
                 }
                 if (s > 1)

@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
-//[RequireComponent(typeof(BoxCollider))]
+[RequireComponent(typeof(WFC))]
 public class OutputGrid : MonoBehaviour
 {
 

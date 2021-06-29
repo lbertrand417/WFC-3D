@@ -1,0 +1,132 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.5f1 (3737af19df53) revision 3618735'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.1052; Version 2009; 64bit' Language: 'fr' Physical Memory: 8103 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Lauriane/OneDrive/Documents/Cours/Telecom/IGR205/WFC-3D/WFC-3D
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+56290
+Successfully changed project path to: C:/Users/Lauriane/OneDrive/Documents/Cours/Telecom/IGR205/WFC-3D/WFC-3D
+C:/Users/Lauriane/OneDrive/Documents/Cours/Telecom/IGR205/WFC-3D/WFC-3D
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 304.04 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.5f1 (3737af19df53)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Lauriane/OneDrive/Documents/Cours/Telecom/IGR205/WFC-3D/WFC-3D/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 520 (ID=0x1916)
+    Vendor:   Intel
+    VRAM:     4051 MB
+    Driver:   22.20.16.4836
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56388
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010392 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 334.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 10.228 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.022374 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.443 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.27 seconds
+Refreshing native plugins compatible for Editor in 1.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2671 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.5 MB.
+System memory in use after: 98.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3125.
+Total: 9.053800 ms (FindLiveObjects: 0.506500 ms CreateObjectMapping: 0.329200 ms MarkObjects: 8.078700 ms  DeleteObjects: 0.137200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/SemiInteractiveGrid.cs
+  artifactKey: Guid(03fa6f4ef1461fa41b0329276b44dcfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SemiInteractiveGrid.cs using Guid(03fa6f4ef1461fa41b0329276b44dcfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7c9dfb75e0332095235177616aad41') in 0.132878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2174.380335 seconds.
+  path: Assets/Resources/Small.prefab
+  artifactKey: Guid(08d66aeab95b5fa4b9637375e0e5307e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Small.prefab using Guid(08d66aeab95b5fa4b9637375e0e5307e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a90e285d613a15f9fb8358bfdce1e27') in 1.944923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 93.640113 seconds.
+  path: Assets/Resources/Cube_bleu.prefab
+  artifactKey: Guid(a7ccd47275b08a242ab9d98e9264d402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cube_bleu.prefab using Guid(a7ccd47275b08a242ab9d98e9264d402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2407cf11e4eb62f16b00bb29e6642db') in 0.080026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.396073 seconds.
+  path: Assets/Resources/Small.prefab
+  artifactKey: Guid(08d66aeab95b5fa4b9637375e0e5307e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Small.prefab using Guid(08d66aeab95b5fa4b9637375e0e5307e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '506b5459fdee157602382e71c316b981') in 0.116725 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017876 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.445 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2665 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.1 MB.
+System memory in use after: 102.3 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3136.
+Total: 6.116500 ms (FindLiveObjects: 0.529600 ms CreateObjectMapping: 1.187800 ms MarkObjects: 4.347700 ms  DeleteObjects: 0.049200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011009 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.556 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.87 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2665 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.1 MB.
+System memory in use after: 102.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3139.
+Total: 5.495000 ms (FindLiveObjects: 0.559700 ms CreateObjectMapping: 0.292200 ms MarkObjects: 4.227100 ms  DeleteObjects: 0.412500 ms)
+
